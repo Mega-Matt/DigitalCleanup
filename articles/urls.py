@@ -1,4 +1,4 @@
-'''from django.conf.urls.static import static
+from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 
@@ -12,4 +12,4 @@ urlpatterns = [
     path('<slug:slug>/', views.PostDetailView.as_view(), name='post_detail'),
     path('comment/<int:pk>/', views.AddComment.as_view(), name='add_comment'),
 ]
-'''
+

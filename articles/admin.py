@@ -1,4 +1,4 @@
-'''from django.contrib import admin
+from django.contrib import admin
 from django.utils.safestring import mark_safe
 
 from .models import Post, Tag, Comment, PostPicture
@@ -60,4 +60,4 @@ class PostPictureAdmin(admin.ModelAdmin):
 
 
 admin.site.site_title = 'DigitalCleanup'
-admin.site.site_header = 'DigitalCleanup' '''
+admin.site.site_header = 'DigitalCleanup' 
