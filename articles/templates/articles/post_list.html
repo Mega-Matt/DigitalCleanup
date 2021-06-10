@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form action="{% url 'filter' %}" method="get">
+    <div class="left-side">
+       <h3 class="sear-head editContent">Тег</h3>
+       <ul class="w3layouts-box-list">
+           {% for Tag in view.get_tags %}
+              <li class="editContent">
+                  <input type="checkbox" class="checked" name="Tag" value="{{ Tag.id }}">
+                  <span class="span editContent">{{ Tag.Title }}</span>
+              </li>
+           {% endfor %}
+       </ul>
+    </div>
+    <button type="submit">Знайти</button>
+ </form>
+{% for Post in post_list%}
+    {{ Post.Title }}
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,1 @@
+web: gunicorn DigitalCleanup.wsgi --log-file -
